@@ -1,0 +1,26 @@
+<view class="boss">
+  <view class='backgroud'>
+    <swiper class='swiper' indicator-dots='{{indicatorDots}}' autoplay='{{autoplay}}'>
+      <block wx:for="{{imgUrls}}" wx:key="index">
+        <swiper-item class='swiper-item'>
+          <image mode='aspectFill' src='{{item}}'></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class='cat'>
+    <view class='item' wx:for='{{5}}' wx:index='index' wx:key='{{index}}'>
+      <view class='item-one'>
+        <image src='http://img17.3lian.com/201612/20/244c18163f7fd2bb098d23222da28b5c.jpg' mode='aspectFill'></image>
+      </view>
+      <view class='item-two'>
+        <view>鹿安驾校--{{item + 1}}</view>
+        <view>一切只为让你安全上鹿</view>
+      </view>
+      <!-- <view class='item-three'>
+          <image mode='aspectFill' src='../../../style/go.png'></image>
+          距离您3.2km
+        </view> -->
+    </view>
+  </view>
+</view>

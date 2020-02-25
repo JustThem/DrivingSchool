@@ -1,0 +1,34 @@
+<view class='boss'>
+  <view class='problem'>
+    <view class='now-prob' wx:for='{{pageProblemList}}' wx:key='{{index}}'>
+        <view class='item-up {nowIndex===index ? "item-bor":""}}' bindtap='onProblem' data-index='{{index}}'>
+          <view>{{item.problem}}</view>
+          <view>
+            <image wx:if='{{!item.isImg}}' class='{{nowIndex===index ? "image-bac":""}}' src='../../../style/go.png'></image>
+            <image wx:if='{{item.isImg}}' class='image-rot' src='../../../style/go.png'></image>
+          </view>
+        </view>
+        <view class='item-down {{nowIndex===index ? "item-bac":""}}'>
+          <view class='text {{item.cssClass}}'>
+            <view class='answer'>{{item.answer}}</view>
+           <block wx:if="{{item.answerList}}">
+            <view class='answer-list' wx:for='{{item.answerList}}' wx:for-index='itIndex' wx:for-item='itItem' wx:key='{{itIndex}}'>{{itItem}}</view>
+          </block>
+          </view>
+        </view>
+    </view>
+    <view class='next' bindtap='onNext'>换一换</view>
+    <view class='contact'>
+    <button bindtap='onPhone'>
+      <image src='../../../style/mobile.png'></image>
+      <view>电话联系</view>
+    
+    </button>
+    <button open-type="contact" bindcontact="onContact">
+      <image class='wx-img' src='../../../style/wx.png'></image>
+      <view>微信联系</view>
+    </button>
+  </view>
+  </view>
+  
+</view>

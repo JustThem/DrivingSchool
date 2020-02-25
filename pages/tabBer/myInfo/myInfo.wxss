@@ -1,0 +1,111 @@
+page{
+  background-color: #f8f8f8;
+}
+.userinfo {
+  width: 95%;
+  height: 15vh;
+  margin: 0 auto;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.userinfo::after {
+  border: none;
+}
+
+.left-user{
+  display: flex;
+  align-items: center;
+}
+.right-go image{
+  width: 15px;
+  height: 15px;
+}
+
+.userinfo-avatar {
+  width: 120rpx;
+  height: 120rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.userinfo-nickname{
+  background-color: #fff;
+  font-size: 14px;
+} 
+.userinfo-nickname::after {
+  border: none;
+}
+.fun-but{
+  width: 95%;
+  height: 30vh;
+  /* background-color: red; */
+  margin: 0 auto;
+  margin-top: 10px;
+  position: relative;
+}
+.fun-but view{
+  text-align: center;
+}
+.fun-but view:nth-of-type(1){
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 37%;
+  background-color: #fff;
+  line-height: 30vh;
+}
+.fun-but view:nth-of-type(2){
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 40%;
+  width: 60%;
+  background-color: #fff;
+  line-height: 12vh;
+}
+.fun-but view:nth-of-type(3){
+  position: absolute;
+  bottom: 0;
+  right: 31%;
+  height: 53%;
+  width: 29%;
+  background-color: #fff;
+  line-height: 16vh;
+}
+.fun-but view:nth-of-type(4){
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 53%;
+  width: 29%;
+  background-color: #fff;
+  line-height: 16vh;
+}
+.lu-an{
+  width: 95%;
+  margin:10px auto;
+}
+.item{
+  margin: 5px 0;
+  width: 95%;
+  height: 11vh;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 14px;
+  position: relative;
+}
+.one{
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+.one image{
+  width: 25px;
+  height: 25px;
+  margin: 0 10px 0 5px;
+}

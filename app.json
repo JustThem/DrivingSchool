@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/tabBer/index/index",
+    "pages/tabBer/myInfo/myInfo"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "鹿安驾校",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#fff",
+    "selectedColor": "#FFC10D",
+    "color": "#515151",
+    "list": [{
+      "pagePath": "pages/tabBer/index/index",
+      "text": "驾校",
+      "iconPath": "./style/cat.png",
+      "selectedIconPath": "./style/catSelected.png"
+    },
+    {
+      "pagePath": "pages/tabBer/myInfo/myInfo",
+      "text": "我的",
+      "iconPath": "./style/my.png",
+      "selectedIconPath": "./style/mySelected.png"
+    }
+    ]
+  },
+  "subpackages":[
+    {
+      "root": "pages/my",
+      "pages": [
+        "problem/problem"
+      ]
+    }
+  ],
+  "sitemapLocation": "sitemap.json"
+}

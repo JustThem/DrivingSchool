@@ -1,0 +1,37 @@
+<view class="boss">
+  <button class="userinfo" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+    <view class='left-user'>
+      <block wx:if="{{!hasUserInfo && canIUse}}">
+        <image src='http://k.zol-img.com.cn/wallpaper/7099/7098663_0540.jpg' mode='cover' class="userinfo-avatar"></image>
+        <button class='userinfo-nickname'>登录/注册</button>
+      </block>
+      <block wx:else>
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <button class="userinfo-nickname">{{userInfo.nickName}}</button>
+      </block>
+    </view>
+    <!-- <view class='right-go' wx:if='{{hasUserInfo}}'>
+      <image src='../../../style/go.png'></image>
+    </view> -->
+  </button>
+  <view class='fun-but'>
+    <view>1</view>
+    <view>预约记录</view>
+    <view>3</view>
+    <view>4</view>
+  </view>
+ 
+  <view class='lu-an'>
+    <view class='item' bindtap='onBut'  data-name='{{item.icon}}' wx:for='{{luList}}' wx:index='index' wx:key='{{index}}'>
+      <view class='one'>
+        <image src='../../../style/{{item.icon}}.png'></image>
+        <view>{{item.name}}</view>
+      </view>
+      <view class='two'>
+        <view class='right-go'>
+          <image src='../../../style/go.png'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
